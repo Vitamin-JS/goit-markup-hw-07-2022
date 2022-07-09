@@ -1,11 +1,4 @@
 // в этот файл подключаем все паршиалсы
-@import "./partials";
-
-body {
-  background: plum;
-}
-
-.container {
-  min-width: 1200px;
-  background: coral;
-}
+@import "./utils/variables";
+@import "./base/normalize";
+@import "./components/page-header";
