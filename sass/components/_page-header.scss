@@ -1,7 +1,41 @@
-.nav {
-  font-weight: 700;
+/* =========================   Стили Хедера ==================================== */
+/* ==== Flex-box Header   ============= */
+
+header {
+  min-width: 1200px;
 }
 
-.nav-text {
-  color: $text-main-color;
+.header-flex {
+  display: flex;
+  align-items: baseline;
+  padding-top: 6px;
 }
+
+/* ====  Flex-box навигации хедера===== */
+// .header-nav {
+//   display: flex;
+// }
+
+/* ================ Логотип ============ */
+.logo-header {
+  display: block;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $secondary-text-color;
+  text-decoration: none;
+
+  margin-left: 0;
+  margin-right: 86px;
+
+  & span {
+    font-family: Raleway, sans-serif;
+    color: $color-acent;
+  }
+}
+
+// .logo-header span {
+//   font-family: Raleway, sans-serif;
+//   color: var(--color-acent);
+// }

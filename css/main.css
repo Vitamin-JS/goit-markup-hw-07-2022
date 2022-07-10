@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -19,15 +20,11 @@ Use a better box model (opinionated).
 3. Use a more readable tab size (opinionated).
 */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-  -moz-tab-size: 4;
-  /* 3 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
-     tab-size: 4;
-  /* 3 */
+     tab-size: 4; /* 3 */
 }
 
 /*
@@ -39,10 +36,8 @@ Sections
 2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
 */
 body {
-  margin: 0;
-  /* 1 */
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  /* 2 */
+  margin: 0; /* 1 */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
 }
 
 /*
@@ -54,10 +49,8 @@ Grouping content
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
 */
 hr {
-  height: 0;
-  /* 1 */
-  color: inherit;
-  /* 2 */
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
 }
 
 /*
@@ -88,10 +81,8 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -129,10 +120,8 @@ Tabular data
 2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
 */
 table {
-  text-indent: 0;
-  /* 1 */
-  border-color: inherit;
-  /* 2 */
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
 }
 
 /*
@@ -148,14 +137,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -226,10 +211,8 @@ Correct the cursor style of increment and decrement buttons in Safari.
 2. Correct the outline style in Safari.
 */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -244,10 +227,8 @@ Remove the inner padding in Chrome and Safari on macOS.
 2. Change font properties to 'inherit' in Safari.
 */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /*
@@ -261,10 +242,67 @@ summary {
   display: list-item;
 }
 
-.nav {
-  font-weight: 700;
+body {
+  font-family: "Roboto", sans-serif;
+  color: #757575;
+  background-color: #ffffff;
+  overflow: scroll;
 }
 
-.nav-text {
-  color: coral;
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================   Стили Хедера ==================================== */
+/* ==== Flex-box Header   ============= */
+header {
+  min-width: 1200px;
+}
+
+.header-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding-top: 6px;
+}
+
+/* ====  Flex-box навигации хедера===== */
+/* ================ Логотип ============ */
+.logo-header {
+  display: block;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #212121;
+  text-decoration: none;
+  margin-left: 0;
+  margin-right: 86px;
+}
+.logo-header span {
+  font-family: Raleway, sans-serif;
+  color: #2196f3;
 }/*# sourceMappingURL=main.css.map */
