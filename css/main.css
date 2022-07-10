@@ -273,7 +273,7 @@ p {
   margin-right: auto;
 }
 
-/* =========================   Стили Хедера ==================================== */
+/* =====================   Стили Хедера ========================= */
 /* ==== Flex-box Header   ============= */
 header {
   min-width: 1200px;
@@ -289,7 +289,6 @@ header {
   padding-top: 6px;
 }
 
-/* ====  Flex-box навигации хедера===== */
 /* ================ Логотип ============ */
 .logo-header {
   display: block;
@@ -305,4 +304,66 @@ header {
 .logo-header span {
   font-family: Raleway, sans-serif;
   color: #2196f3;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/* ==============  Навигация =========== */
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav-list > li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #212121;
+  text-decoration: none;
+  padding-top: 22px;
+  padding-bottom: 28px;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-nav:hover, .site-nav:focus {
+  color: #2196f3;
+}
+.site-nav.current {
+  color: #2196f3;
+}
+
+/* ===== Декоратвная планка в навигации шапки ==== */
+.nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav-item::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  opacity: 0;
+}
+
+.current-page::after {
+  opacity: 1;
+}
+
+/* ========== Контакты в навигации ======== *//*# sourceMappingURL=main.css.map */
