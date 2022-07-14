@@ -517,4 +517,63 @@ footer {
 
 .icon-foot:not(:last-of-type) {
   margin-right: 10px;
+}
+
+/* ======= Поле ввода E-mail в футере   ============= */
+.footer-action {
+  margin-left: auto;
+}
+.footer-action input {
+  width: 358px;
+  height: 50px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 12px;
+  padding-left: 16px;
+}
+
+/* ======= Кнопка ПОДПИСАТЬСЯ в футере   ============= */
+/* === Стили кнопки -:after работает только при display: flex; ======================     !!!     */
+.input-deco {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+.footer-btn::after {
+  content: " ";
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/SVG-for-sprite/icon-send.svg);
+  margin-left: 10px;
 }/*# sourceMappingURL=main.css.map */
