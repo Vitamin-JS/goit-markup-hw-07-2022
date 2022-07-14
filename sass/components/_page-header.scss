@@ -84,3 +84,46 @@ header {
 }
 
 /* ========== Контакты в навигации ======== */
+.nav-contacts {
+  display: flex;
+  margin-left: auto;
+
+  & > li:not(:first-of-type) {
+    margin-left: 30px;
+  }
+}
+
+.nav-contacts a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.1;
+  font-weight: 500;
+  color: $main-text-color;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $color-acent;
+  }
+}
+
+/* ===== Иконки перед контактами  Вариант через ::before/after в коде HW06 ====== */
+
+/* ===== Иконки перед контактами  Вариант через inline-SVG  ====== */
+.nav-contacts a {
+  display: flex;
+  padding-top: 22px;
+  padding-bottom: 30px;
+}
+
+.icon {
+  margin-right: 10px;
+  fill: $main-text-color;
+}
+
+.nav-contacts li:hover .icon {
+  fill: $color-acent;
+}

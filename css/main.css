@@ -366,4 +366,155 @@ header {
   opacity: 1;
 }
 
-/* ========== Контакты в навигации ======== *//*# sourceMappingURL=main.css.map */
+/* ========== Контакты в навигации ======== */
+.nav-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+.nav-contacts > li:not(:first-of-type) {
+  margin-left: 30px;
+}
+
+.nav-contacts a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.1;
+  font-weight: 500;
+  color: #757575;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-contacts a:hover, .nav-contacts a:focus {
+  color: #2196f3;
+}
+
+/* ===== Иконки перед контактами  Вариант через ::before/after в коде HW06 ====== */
+/* ===== Иконки перед контактами  Вариант через inline-SVG  ====== */
+.nav-contacts a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 22px;
+  padding-bottom: 30px;
+}
+
+.icon {
+  margin-right: 10px;
+  fill: #757575;
+}
+
+.nav-contacts li:hover .icon {
+  fill: #2196f3;
+}
+
+/* =========================  Футер  ======================== */
+footer {
+  background-color: #2f303a;
+  min-width: 1200px;
+}
+
+.footer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/*  ========  Логотип Футера  ============ */
+.logo-header.logo-footer {
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* ======= Адрес, Тел, E-mail в футере ========== */
+.foot-adress {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.foot-adress:hover, .foot-adress:focus {
+  color: #ffffff;
+}
+
+.footer-contacts li {
+  margin-bottom: 9px;
+}
+
+/* ======= Отступ справа от адреса ============== */
+.footer-contacts {
+  margin-right: 70px;
+}
+
+/* ========= Заголовки в футере   ========*/
+.title-footer {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* ===== Ссылки на соцсети в футере Var#3 Inline-SVG  ==========================*/
+.foot-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icon-foot-svg {
+  fill: #ffffff;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-foot a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-foot a:hover, .icon-foot a:focus {
+  background-color: #2196f3;
+}
+
+.icon-foot:not(:last-of-type) {
+  margin-right: 10px;
+}/*# sourceMappingURL=main.css.map */

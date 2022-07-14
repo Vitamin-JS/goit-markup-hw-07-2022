@@ -1,0 +1,92 @@
+/* =========================  Футер  ======================== */
+footer {
+  background-color: $footer-bg-color;
+  min-width: 1200px;
+}
+
+.footer-box {
+  display: flex;
+  align-items: baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/*  ========  Логотип Футера  ============ */
+.logo-header.logo-footer {
+  color: $main-bg-color;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* ======= Адрес, Тел, E-mail в футере ========== */
+.foot-adress {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.7;
+  color: $footer-grey-text;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $main-bg-color;
+  }
+}
+
+.footer-contacts li {
+  margin-bottom: 9px;
+}
+
+/* ======= Отступ справа от адреса ============== */
+.footer-contacts {
+  margin-right: 70px;
+}
+
+/* ========= Заголовки в футере   ========*/
+.title-footer {
+  display: inline-flex;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $main-bg-color;
+  margin-bottom: 20px;
+}
+
+/* ===== Ссылки на соцсети в футере Var#3 Inline-SVG  ==========================*/
+.foot-list {
+  display: flex;
+}
+
+.icon-foot-svg {
+  fill: $main-bg-color;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-foot a {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  justify-content: center;
+  align-items: center;
+  background-color: $footer-social-bg;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $color-acent;
+  }
+}
+
+.icon-foot:not(:last-of-type) {
+  margin-right: 10px;
+}
