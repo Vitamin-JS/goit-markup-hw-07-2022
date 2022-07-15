@@ -413,6 +413,18 @@ header {
   fill: #2196f3;
 }
 
+/* ========= Заголовки Чем занимаемся, Наша команда, Клиенты ================== */
+.works-title,
+.team-title,
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #212121;
+  text-align: center;
+}
+
 /* =========================  Футер  ======================== */
 footer {
   background-color: #2f303a;
