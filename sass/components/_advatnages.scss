@@ -1,0 +1,46 @@
+/* ================ Секция Преимущесва ==================  */
+/* ==== Flex-box Преимущества   =============*/
+.adv-list {
+  display: flex;
+
+  & > li {
+    width: calc((100% - 90px) / 4);
+    // display: flex;
+    // flex-direction: column;
+  }
+
+  & > li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+/* === Фон иконок в Преимуществах -Var#3 Inline-SVG  =======*/
+.icon-advantage {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+  background-color: $secondary-bg-color;
+}
+
+/* =====  Margin внизу всей секции  ==========*/
+.advantage {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  & h2 {
+    // display: none;
+    @extend %visually-hidden;
+    text-align: center;
+    margin-bottom: 30px;
+    color: coral;
+  }
+}
+
+// .advantage h2 {
+//   display: none;
+//   text-align: center;
+//   margin-bottom: 30px;
+//   color: coral;
+// }
