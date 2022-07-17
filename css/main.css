@@ -970,6 +970,71 @@ header {
   margin-right: 30px;
 }
 
+/* =============================== Секция Постоянные клиенты ==================================  */
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  /* === Заголовок Клиенты ============ */
+  /* ======= Список компаний =========== */
+}
+.clients-title {
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* ==== Ссылки на компании  ========== */
+.clients a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 170px;
+  height: 90px;
+  background: #ffffff;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  -webkit-transition-property: border;
+  transition-property: border;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-clients {
+  fill: #afb1b8;
+  -webkit-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-list > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients a:hover,
+.clients a:focus {
+  border: 1px solid #2196f3;
+}
+
+.clients a:hover svg,
+.clients a:focus svg {
+  fill: #2196f3;
+}
+
 /* =========================  Футер  ======================== */
 footer {
   background-color: #2f303a;
